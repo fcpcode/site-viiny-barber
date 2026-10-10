@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Studio Viiny Barber | Barbearia no Costa e Silva, Joinville</title>
+<meta name="description" content="Studio Viiny Barber, barbearia no Costa e Silva, em Joinville. Cortes de cabelo e barba, de clássicos a penteados modernos. Agende seu horário.">
+<meta property="og:title" content="Studio Viiny Barber | Joinville">
+<meta property="og:description" content="Conheça os serviços da Viiny Barber e agende seu horário.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#1c1d1f">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BarberShop","name":"Barbearia Studio Viiny Barber","telephone":"+5547988121984","address":{"@type":"PostalAddress","streetAddress":"R. Inambu, 3013","addressLocality":"Joinville","addressRegion":"SC","postalCode":"89220-002","addressCountry":"BR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"18:00"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --carvao:#1c1d1f; --carvao2:#2a2b2e; --preto:#000; --branco:#fff; --osso:#ffffff;
+  --azul:#f7b917; --azul-claro:#ffd45c; --cinza:#a9abb0;
+  --display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --texto:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --pad:clamp(20px,5vw,72px);
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--carvao);color:var(--branco);font:400 1.0625rem/1.6 var(--texto);padding-bottom:env(safe-area-inset-bottom,0px)}
+img,svg{max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--azul-claro);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--branco);color:#000;padding:10px 14px;z-index:99}
+.skip:focus{left:8px}
+h1,h2,h3{font-family:var(--display);font-weight:900;line-height:.9;margin:0;letter-spacing:.005em;text-transform:uppercase}
+h2{font-size:clamp(2.6rem,7vw,5.5rem)}
+h3{font-size:1.7rem;line-height:1}
+p{margin:0 0 1em;max-width:62ch}
+.wrap{padding-inline:var(--pad);max-width:1400px;margin-inline:auto}
+section{padding-block:clamp(72px,10vw,140px)}
+
+/* botões */
+.btn{display:inline-block;font:600 1rem/1 var(--texto);padding:18px 28px;text-decoration:none;border:2px solid var(--branco);color:var(--branco);background:transparent;cursor:pointer;transition:background .2s,color .2s}
+.btn:hover{background:var(--branco);color:#000}
+.btn.solid{background:var(--azul);border-color:var(--azul);color:#000}
+.btn.solid:hover{background:var(--branco);border-color:var(--branco);color:#000}
+
+/* cabeçalho */
+header{position:sticky;top:0;z-index:50;background:rgba(28,29,31,.94);backdrop-filter:blur(8px);border-bottom:1px solid #3a3b3f;padding-top:env(safe-area-inset-top,0px)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+.logo{font:900 1.9rem/1 var(--display);text-decoration:none;text-transform:uppercase;display:flex;align-items:center;gap:10px}
+.logo i{display:block;width:10px;height:30px;background:repeating-linear-gradient(-45deg,#fff 0 4px,var(--azul) 4px 8px)}
+nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0;align-items:center}
+nav a{text-decoration:none;font-weight:500}
+nav a:not(.btn):hover{text-decoration:underline;text-underline-offset:6px}
+nav .btn{padding:12px 20px}
+.menu{display:none;background:none;border:2px solid #fff;color:#fff;padding:10px 14px;font:600 .95rem var(--texto);cursor:pointer}
+
+/* hero */
+.hero{background:#000;padding:0;display:grid;grid-template-columns:clamp(16px,2.4vw,30px) 1fr;min-height:calc(100svh - 70px)}
+.pole{background:repeating-linear-gradient(-45deg,#fff 0 14px,var(--azul) 14px 28px,#fff 28px 42px,#000 42px 56px);background-size:79.2px 79.2px;animation:pole 6s linear infinite}
+@keyframes pole{to{background-position:0 79.2px}}
+.hero-in{display:grid;grid-template-columns:1.1fr .9fr;gap:var(--pad);align-items:end;padding:clamp(40px,6vw,80px) var(--pad)}
+.logo-hero{width:min(440px,100%);height:auto;animation:in .9s cubic-bezier(.2,.7,.2,1) both}
+.hero h1{font-size:clamp(4.6rem,14vw,12rem)}
+.hero h1 span{display:block;animation:in .9s cubic-bezier(.2,.7,.2,1) both}
+.hero h1 span:nth-child(2){animation-delay:.12s}
+@keyframes in{from{opacity:0;transform:translateY(.25em)}}
+.lema{font:700 clamp(1.5rem,3vw,2.4rem)/1.05 var(--display);text-transform:uppercase;margin:28px 0 14px}
+.acoes{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+
+/* espaços de foto */
+.slot{position:relative;display:grid;place-items:center;text-align:center;padding:16px;min-height:200px;background:repeating-linear-gradient(135deg,#232426 0 12px,#2a2b2e 12px 24px);border:1px dashed #6a6c72;color:var(--cinza);font-size:.9rem}
+.slot b{display:block;color:#fff;font-weight:600;margin-bottom:2px}
+.slot.tem-foto{border:0;background:#111;padding:0}
+.slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* sobre */
+.sobre{background:var(--osso);color:#111}
+.sobre .grid{display:grid;grid-template-columns:5fr 7fr;gap:var(--pad);align-items:start}
+.sobre .slot{background:repeating-linear-gradient(135deg,#d9d8d3 0 12px,#e2e1dc 12px 24px);border-color:#777;color:#444;min-height:420px}
+.sobre .slot b{color:#000}
+.sobre .slot.b{min-height:240px;margin-top:20px;width:70%;margin-left:auto}
+.ph{background:#fff;border-left:6px solid var(--azul);padding:14px 18px;margin:0 0 1em;color:#333;font-size:.98rem}
+.equipe{list-style:none;padding:0;margin:12px 0 0;display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.equipe li{border-left:6px solid var(--azul);padding:6px 14px}
+.equipe strong{display:block;font-size:1.05rem}
+.atrib{list-style:none;padding:0;margin:28px 0 0;display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.atrib li{border-left:6px solid var(--azul);padding:6px 14px;font-weight:600}
+.sobre h2{margin-bottom:32px}
+
+/* serviços */
+.lista{list-style:none;margin:48px 0 0;padding:0;border-top:2px solid #fff}
+.lista li{display:grid;grid-template-columns:1.2fr 2fr auto;gap:24px;align-items:baseline;padding:26px 0;border-bottom:1px solid #4a4b50}
+.campo{color:var(--azul-claro);font-style:italic}
+.preco{font:700 1.8rem/1 var(--display);white-space:nowrap;color:var(--azul)}
+.nota{color:var(--cinza);margin-top:24px;font-size:.95rem}
+
+/* galeria */
+.galeria{background:var(--preto)}
+.mosaico{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:clamp(190px,24vw,340px);gap:12px;margin-top:48px}
+.mosaico .slot{min-height:0;background:repeating-linear-gradient(135deg,#141414 0 12px,#1d1d1e 12px 24px)}
+.m1{grid-column:span 6;grid-row:span 2}.m2,.m3,.m4,.m6{grid-column:span 3;grid-row:span 1}
+
+/* contato */
+.contato{background:var(--azul)}
+.contato .grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--pad)}
+.contato p,.contato dd,.contato dt,.contato h2{color:#000}
+.contato .btn{background:#fff;color:#000;border-color:#fff}
+.contato .btn:hover{background:#000;color:#fff;border-color:#000}
+dl{margin:0}dt{font-weight:600;margin-top:20px}dd{margin:2px 0 0}
+.aviso{background:#000;color:#fff;padding:12px 16px;margin-top:20px;font-size:.92rem;display:none}
+.aviso.on{display:block}
+
+/* localização */
+.mapa{margin-top:48px;min-height:380px}
+.mapa-box{margin-top:48px;background:var(--carvao2)}
+.mapa-box iframe{display:block;width:100%;height:clamp(300px,45vw,460px);border:0}
+
+/* rodapé */
+footer{background:var(--preto);padding:56px 0 40px;border-top:6px solid var(--azul)}
+.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px}
+footer ul{list-style:none;margin:0;padding:0}footer li{margin-bottom:8px}
+footer small{display:block;color:var(--cinza);margin-top:40px;max-width:none}
+footer h3{font-size:1.2rem;margin-bottom:12px;color:var(--azul-claro)}
+
+@media (max-width:860px){
+  .menu{display:block}
+  nav{position:absolute;left:0;right:0;top:100%;background:var(--carvao);border-bottom:1px solid #3a3b3f;display:none;padding:12px var(--pad) 24px}
+  nav.open{display:block}
+  nav ul{flex-direction:column;align-items:stretch;gap:0}
+  nav li a:not(.btn){display:block;padding:16px 0;border-bottom:1px solid #3a3b3f}
+  nav .btn{margin-top:16px;text-align:center;display:block}
+  .hero-in,.sobre .grid,.contato .grid,.fgrid{grid-template-columns:1fr}
+  .hero{min-height:0}
+  .lista li{grid-template-columns:1fr;gap:6px}
+  .mosaico{grid-template-columns:repeat(2,1fr);grid-auto-rows:44vw}
+  .mosaico .slot{grid-column:span 1!important;grid-row:span 1!important}
+  .m1{grid-column:span 2!important;grid-row:span 2!important}
+  .sobre .slot.b{width:100%}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .pole,.hero h1 span{animation:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#topo" aria-label="Viiny Barber, início"><i aria-hidden="true"></i>Viiny Barber</a>
+    <button class="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Principal">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#localizacao">Localização</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a class="btn solid wa" href="#contato">Agendar horário</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+<section class="hero" id="topo" aria-label="Apresentação">
+  <div class="pole" aria-hidden="true"></div>
+  <div class="hero-in">
+    <div>
+      <h1><img class="logo-hero" src="img/logo.jpg" width="640" height="640" alt="Studio Viiny Barber House"></h1>
+      <p class="lema">Criando identidade masculina através de um corte.</p>
+      <p>Cortes e barba feitos com atenção ao detalhe. Escolha seu horário e venha conhecer a Viiny Barber.</p>
+      <div class="acoes">
+        <a class="btn solid wa" href="#contato">Agendar um horário</a>
+        <a class="btn" href="#servicos">Conhecer os serviços</a>
+      </div>
+    </div>
+    <div class="slot tem-foto" style="min-height:min(62vh,560px)" data-slot="hero"><img src="img/hero.jpg" alt="Cabelo degradê e barba aparada, visto de perfil" width="685" height="752"></div>
+  </div>
+</section>
+
+<section class="sobre" id="sobre">
+  <div class="wrap grid">
+    <div>
+      <div class="slot tem-foto" data-slot="sobre-1"><img src="img/sobre-1.jpg" alt="Interior da barbearia, com cadeiras marrons, luminárias e o logo na TV" width="760" height="1350" loading="lazy"></div>
+      <div class="slot tem-foto b" data-slot="sobre-2"><img src="img/sobre-2.jpg" alt="Cliente fazendo a barba com máquina dourada" width="690" height="746" loading="lazy"></div>
+    </div>
+    <div>
+      <h2>Sobre a barbearia</h2>
+      <p>O Studio Viiny Barber fica no Costa e Silva, em Joinville, e trabalha com cortes de cabelo e barba, de cortes clássicos a penteados modernos. O atendimento é feito por uma equipe de barbeiros experientes.</p>
+      <p>Viiny chegou a Joinville, trabalhou na indústria e viu na barbearia uma oportunidade. Passou por outras barbearias, chegou a atender em uma tenda na própria casa, deu curso gratuito e hoje tem dois studios.</p>
+      <h3 style="margin-top:12px">Equipe</h3>
+      <ul class="equipe"><li><strong>Viiny Barber</strong> Especialista em visagismo</li><li><strong>Marcos Barber</strong> Barbeiro</li><li><strong>Juan Barber</strong> Barbeiro</li><li><strong>Kauan</strong> Barbeiro</li></ul>
+      <ul class="atrib"><li>Atendimento exclusivo</li><li>Profissionais qualificados</li><li>Ambiente confortável</li><li>Qualidade que você merece</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="servicos">
+  <div class="wrap">
+    <h2>Serviços</h2>
+    <ul class="lista">
+      <li><h3>Cortes</h3><p>Cortes clássicos e penteados modernos.</p><span class="preco">a partir de R$ 50,00</span></li>
+      <li><h3>Corte e barba</h3><p>Corte e barba no mesmo atendimento.</p><span class="preco">a partir de R$ 80,00</span></li>
+      <li><h3>Barba</h3><p>Barba feita com atenção ao contorno e ao acabamento.</p><span class="preco">a partir de R$ 40,00</span></li>
+      <li><h3>Planos</h3><p>Planos por assinatura.</p><span class="preco">a partir de R$ 99,90</span></li>
+    </ul>
+    <p class="nota">Valores a partir de, conforme a tabela de preços da barbearia.</p>
+    <p class="nota">Também no estúdio: visagismo, prótese capilar, nano pigmentação e cabelo afro. <a class="wa" href="#contato" style="text-decoration:underline">Consulte os valores pelo WhatsApp.</a></p>
+  </div>
+</section>
+
+<section class="galeria" id="galeria">
+  <div class="wrap">
+    <h2>Galeria</h2>
+    <div class="mosaico">
+      <div class="slot tem-foto m1" data-slot="g1"><img src="img/g1.jpg" alt="Corte degradê em cabelo cacheado, visto de perfil" width="690" height="802" loading="lazy"></div>
+      <div class="slot tem-foto m2" data-slot="g2"><img src="img/g2.jpg" alt="Corte degradê com topo texturizado, visto de costas" width="686" height="758" loading="lazy"></div>
+      <div class="slot tem-foto m3" data-slot="g3"><img src="img/g3.jpg" alt="Dois homens sorrindo no interior da barbearia" width="387" height="516" loading="lazy" style="object-position:50% 18%"></div>
+      <div class="slot tem-foto m4" data-slot="g4"><img src="img/g4.jpg" alt="Corte social com barba cheia, visto de perfil" width="454" height="549" loading="lazy"></div>
+            <div class="slot tem-foto m6" data-slot="g6"><img src="img/hero.jpg" alt="Cabelo degradê e barba aparada, visto de perfil" width="685" height="752" loading="lazy"></div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="contato" id="contato">
+  <div class="wrap grid">
+    <div>
+      <h2>Agende seu horário</h2>
+      <p style="margin-top:28px">Chame no WhatsApp e informe o serviço e o dia desejado. A mensagem já vai pronta.</p>
+      <a class="btn wa" href="#contato">Chamar no WhatsApp</a>
+      <p class="aviso" id="aviso" role="status">WhatsApp ainda não configurado: informe o número no arquivo, na constante WHATSAPP, para ativar este botão.</p>
+    </div>
+    <dl>
+      <dt>Agendamento</dt><dd id="dikidi-dd">Pelo link de agendamento online ou pelo WhatsApp.</dd>
+      <dt>Telefone</dt><dd><a href="tel:+5547988121984">(47) 98812-1984</a></dd>
+      <dt>Endereço</dt><dd>R. Inambu, 3013 - Costa e Silva, Joinville - SC, 89220-002</dd>
+      <dt>Horário de funcionamento</dt><dd>Terça a sexta: das 09:00 às 20:00<br>Sábado: das 08:00 às 18:00<br>Domingo e segunda: fechado</dd>
+      <dt>Redes sociais</dt><dd><a href="https://www.instagram.com/studiovinybarber/" target="_blank" rel="noopener">Instagram @studiovinybarber</a><br><a href="https://www.facebook.com/ViinyBarberoficial/" target="_blank" rel="noopener">Facebook</a></dd>
+    </dl>
+  </div>
+</section>
+
+<section id="localizacao">
+  <div class="wrap">
+    <h2>Localização</h2>
+    <p style="margin-top:28px">R. Inambu, 3013 - Costa e Silva, Joinville - SC, 89220-002</p>
+    <div class="mapa-box"><iframe title="Mapa com a localização do Studio Viiny Barber" src="https://www.google.com/maps?q=R.+Inambu,+3013,+Costa+e+Silva,+Joinville+-+SC,+89220-002&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+    <p style="margin-top:20px"><a class="btn solid" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=R.+Inambu%2C+3013+-+Costa+e+Silva%2C+Joinville+-+SC%2C+89220-002">Abrir rota no Google Maps</a></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div><a href="#topo" aria-label="Studio Viiny Barber House, início"><img src="img/logo.jpg" width="210" height="210" alt="Studio Viiny Barber House" style="width:210px;height:auto"></a><p style="margin-top:16px;color:var(--cinza)">Barbearia por assinatura no Costa e Silva, Joinville. R. Inambu, 3013.</p></div>
+      <nav aria-label="Rodapé"><h3>Navegar</h3><ul><li><a href="#sobre">Sobre</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#galeria">Galeria</a></li><li><a href="#localizacao">Localização</a></li></ul></nav>
+      <div><h3>Contato</h3><ul><li><a class="wa" href="#contato">WhatsApp</a></li><li><a href="https://www.instagram.com/studiovinybarber/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.facebook.com/ViinyBarberoficial/" target="_blank" rel="noopener">Facebook</a></li><li><a href="tel:+5547988121984">(47) 98812-1984</a></li></ul></div>
+    </div>
+    <small>© <span id="ano">2026</span> Studio Viiny Barber. Todos os direitos reservados.</small>
+  </div>
+</footer>
+
+<script>
+// CONFIGURAÇÃO: informe o número com DDI e DDD, só dígitos (ex.: 5547999999999).
+const WHATSAPP = "5547988121984"; // confirmar que este número recebe WhatsApp
+const DIKIDI = "https://cashbarber.com.br/studiovinybarber"; // link "Agende aqui" do Instagram da barbearia
+const MENSAGEM = "Olá! Gostaria de agendar um horário na Viiny Barber.";
+
+if (DIKIDI) { document.getElementById("dikidi-dd").innerHTML = '<a href="' + DIKIDI + '" target="_blank" rel="noopener">Agendar online</a> ou chame no WhatsApp.'; }
+document.getElementById("ano").textContent = new Date().getFullYear();
+
+if (WHATSAPP) {
+  const url = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(MENSAGEM);
+  document.querySelectorAll("a.wa").forEach(a => { a.href = url; a.target = "_blank"; a.rel = "noopener"; });
+} else {
+  document.getElementById("aviso").classList.add("on");
+}
+
+const btn = document.querySelector(".menu"), nav = document.getElementById("nav");
+function fechar(){ nav.classList.remove("open"); btn.setAttribute("aria-expanded","false"); }
+btn.addEventListener("click", () => {
+  const aberto = nav.classList.toggle("open");
+  btn.setAttribute("aria-expanded", aberto);
+});
+nav.addEventListener("click", e => { if (e.target.closest("a")) fechar(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape") fechar(); });
+</script>
+</body>
+</html>
